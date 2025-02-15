@@ -78,8 +78,6 @@ const createUser = asyncHandler(async (req, res) => {
         throw new AppError(400, i18n.__("ERROR_INVALID_EMAIL_FORMAT"));
     }
 
-
-    
     const salt = await bcrypt.genSalt(10)
     const hashsedPassword = await bcrypt.hash(password, salt)
 
