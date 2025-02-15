@@ -18,7 +18,6 @@ const constants = require("./../utils/constants");
 // @access  Public
 const authenticate = asyncHanlder(async (req, res) => {
     logger.trace("[authController] :: authenticate() : Start");
-
     const { userName, password} = req.body
     //Checks for username
     let user = await User.findOne({ userName })
@@ -31,7 +30,6 @@ const authenticate = asyncHanlder(async (req, res) => {
                 catch (err) {
                 }
             }
-
             const authresponse = await User.findById(user._id).select('-password');
             res.status(200).json({
                 user: authresponse,
