@@ -13,7 +13,6 @@ const { v1: uuidv1 } = require('uuid');
 const config = require('config');
 const basicUtil = require("../utils/basic.util.js");
 
-
 // @desc    Authenticate a user
 // @route   GET /api/v1/users
 // @access  Public
