@@ -9,7 +9,7 @@ exports.sendMail = async function (mailOptions) {
             service: 'gmail', 
             auth: {
                 user: 'malith.20200144@iit.ac.lk',
-                pass: '#Laka.2001',
+                pass: '####',
             },
         });
         let message = {
