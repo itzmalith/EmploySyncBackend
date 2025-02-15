@@ -46,9 +46,6 @@ const authenticate = asyncHanlder(async (req, res) => {
     logger.trace("[authController] :: authenticate() : End");
 })
 
-
-
-
 const requestPasswordReset = asyncHanlder(async (req, res) => {
     logger.trace("[authController] :: requestPasswordReset() : Start");
     try{
