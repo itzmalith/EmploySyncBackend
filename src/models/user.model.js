@@ -17,12 +17,16 @@ const userSchema = mongoose.Schema({
     profileImage: {
         type: String
     },
-    
+
     organization:{ type: mongoose.ObjectId, ref: "Organization"},
 
     role: { type: mongoose.ObjectId, ref: "Role", required: true },
 
-    cv: { type: mongoose.ObjectId, ref: "Cv" }
+    cv: { type: mongoose.ObjectId, ref: "Cv" },
+
+    appliedjobs: [{ type: mongoose.ObjectId, ref: "Jobs" }],
+    
+    shortlistedjobs: [{ type: mongoose.ObjectId, ref: "Jobs" }]
 })
 
 module.exports = mongoose.model('User', userSchema)
