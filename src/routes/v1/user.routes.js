@@ -8,8 +8,13 @@ router.get('/',  userController.getUsers)
 router.put('/', userController.editUser)
 router.delete('/:id', userController.deleteUser)
 router.get('/:id', userController.getUserById);
-// router.post('/login/',userController.loginUser)
-// router.post('/reset-request/' ,userController.requestPasswordReset)
-// router.post('/reset', userController.resetPassword)
+
+
+router.get('/:id/cv', userController.getUserCv);
+router.get('/:id/organization', userController.getUserOrganization);
+router.post('/:id/cv', userController.createUserCv);
+router.put('/:id/cv', userController.updateUserCv);
+router.delete('/:id/cv', userController.deleteUserCv);
 
 module.exports = router;
+

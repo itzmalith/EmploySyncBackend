@@ -17,28 +17,12 @@ const userSchema = mongoose.Schema({
     profileImage: {
         type: String
     },
-    age:{
-        type : Number
-    },
-    weight:{
-        type :Number
-    },
-    height:{
-        type : Number
-    },
-    allergens: [{
-        type: String
-    }],
-    resetPasswordToken: {
-        type :String
-    },
-    status: {
-        type: String
-    },
-    resetPasswordExpires: {
-        type :Date
-    },
     
+    organization:{ type: mongoose.ObjectId, ref: "Organization"},
+
+    role: { type: mongoose.ObjectId, ref: "Role", required: true },
+
+    cv: { type: mongoose.ObjectId, ref: "Cv" }
 })
 
 module.exports = mongoose.model('User', userSchema)
