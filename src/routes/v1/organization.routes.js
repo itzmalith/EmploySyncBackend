@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { createJob, updateJob, deleteJob, changeJobStatus } = require('../controllers/organizationController');
+const { createJob, updateJob, deleteJob, changeJobStatus } = require('../../controllers/organization.controller');
 
 router.post('/organizations/:id/jobs', createJob);
 router.put('/jobs/:id', updateJob);

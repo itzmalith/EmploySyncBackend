@@ -11,7 +11,13 @@ const Status = require('../utils/status');
 const mailUtil = require('../utils/mail.util');
 const s3Util = require('../utils/s3.util.js');
 const constants = require("./../utils/constants");
+const jwt = require('jsonwebtoken');
 
+
+// Utility to generate JWT
+const generateToken = (id) => {
+    return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: "1d" });
+  };
 
 // @desc    Authenticate a user
 // @route   POST /api/v1/auth
@@ -19,22 +25,24 @@ const constants = require("./../utils/constants");
 const authenticate = asyncHanlder(async (req, res) => {
     logger.trace("[authController] :: authenticate() : Start");
     const { userName, password} = req.body
-    //Checks for username
-    let user = await User.findOne({ userName })
-      
-    if (user && (await bcrypt.compare(password, user.password))) {
-            if (user.profileImage) {
-                try {
-                    user.profileImage = await s3Util.generateProfileImagePresignedURL(user.profileImage);
-                }
-                catch (err) {
-                }
-            }
-            const authresponse = await User.findById(user._id).select('-password');
-            res.status(200).json({
-                user: authresponse,
-                status: constants.USER_STATUS.ACTIVE
-            })
+   
+    let user = await User.findOne({ userName }).populate('role');
+  
+  if (user && (await bcrypt.compare(password, user.password))) {
+    
+    if (user.profileImage) {
+      try {
+        user.profileImage = await s3Util.generateProfileImagePresignedURL(user.profileImage);
+      } catch (err) {
+        // handle error 
+      }
+    }
+    
+    res.status(200).json({
+      token: generateToken(user._id),
+      user: { ...user.toObject(), password: undefined },
+      status: constants.USER_STATUS.ACTIVE
+    });
         
     } else {
         logger.error("[authController] :: authenticate() : Unauthorized user");
