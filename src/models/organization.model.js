@@ -5,6 +5,7 @@ const organizationSchema = mongoose.Schema({
     image: String,
     url: String,
     users: [{ type: mongoose.ObjectId, ref: "User" }],
+    CEO: mongoose.ObjectId,
     jobs: [{ type: mongoose.ObjectId, ref: "Job" }]
 })
 
