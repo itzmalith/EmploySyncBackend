@@ -1,0 +1,12 @@
+[2025-03-01T09:28:08.147] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-01T09:31:06.546] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-01T09:31:40.115] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-01T09:32:18.997] [ERROR] default - [userController] :: createUser() : Email already exists
+[2025-03-01T09:32:44.880] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-01T09:34:33.009] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-01T09:34:44.107] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-01T09:35:34.384] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-01T09:35:40.979] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-01T09:35:44.340] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-01T09:35:46.809] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-01T09:37:16.659] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null

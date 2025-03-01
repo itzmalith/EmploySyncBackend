@@ -1,34 +1,25 @@
 const mongoose = require('mongoose');
 
-const JobSchema = new mongoose.Schema({
+const jobSchema = mongoose.Schema({
     title: {
         type: String,
-        required: true,
-        trim: true
+        required: true
     },
     description: {
         type: String,
         required: true
     },
-    organization: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Organization',
-        required: true
-    },
-    requests: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
-    }],
     status: {
         type: String,
+        required: true,
         enum: ['open', 'closed', 'pending'],
         default: 'open'
     },
-    createdAt: {
-        type: Date,
-        default: Date.now
+    organization: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Organization',  // Reference to Organization model
+        required: true
     }
-});
+}, { timestamps: true });
 
-const Job = mongoose.model('Job', JobSchema);
-module.exports = Job;
+module.exports = mongoose.model('Job', jobSchema);

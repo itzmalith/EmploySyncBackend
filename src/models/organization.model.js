@@ -1,11 +1,16 @@
 const mongoose = require('mongoose')
 
 const organizationSchema = mongoose.Schema({
-    name: String,
+    name:  {
+        type: String,
+        required: true
+    },
     image: String,
-    url: String,
+    url:  {
+        type: String,
+        required: true
+    },
     users: [{ type: mongoose.ObjectId, ref: "User" }],
-    CEO: mongoose.ObjectId,
     jobs: [{ type: mongoose.ObjectId, ref: "Job" }]
 })
 
