@@ -48,52 +48,61 @@ const getUserById = asyncHandler(async (req, res, next) => {
 // @desc    create a user
 // @route   POST /api/v1/users
 // @access  Public
+
 const createUser = asyncHandler(async (req, res) => {
     logger.trace("[userController] :: createUser() : Start");
 
-    const { userName, email, password } = req.body
+    const { userName, email, password, profileImage, organization, role, cv, appliedjobs, shortlistedjobs } = req.body;
 
-    if ( !userName || !email || !password ) {
+    if (!userName || !email || !password || !role) {
         logger.error("[userController] :: createUser() : Missing required field");
-        throw new AppError(400, i18n.__("ERROR_MISSING_REQUIRED_FIELDS"))
+        throw new AppError(400, "Missing required fields");
     }
-
 
     const userNameRegex = /^[^\s]{4,100}$/;
     if (!userNameRegex.test(userName)) {
         logger.error("[userController] :: createUser() : Invalid username format");
-        throw new AppError(400, i18n.__("ERROR_INVALID_USERNAME_FORMAT"));
+        throw new AppError(400, "Invalid username format");
     }
 
-    const userExists = await User.findOne({ userName })
+    const userExists = await User.findOne({ email });
 
     if (userExists) {
-        logger.error("[userController] :: createUser() : Username already exists");
-        throw new AppError(400, i18n.__("ERROR_USER_ALREADY_EXISTS"))
+        logger.error("[userController] :: createUser() : Email already exists");
+        throw new AppError(400, "User with this email already exists");
     }
 
     const emailRegex = /^([a-zA-Z0-9_\.-]+)@([a-zA-Z0-9_\.-]+)\.([a-zA-Z]{2,6})$/;
-
     if (!emailRegex.test(email)) {
         logger.error("[userController] :: createUser() : Invalid email format");
-        throw new AppError(400, i18n.__("ERROR_INVALID_EMAIL_FORMAT"));
+        throw new AppError(400, "Invalid email format");
     }
 
-    const salt = await bcrypt.genSalt(10)
-    const hashsedPassword = await bcrypt.hash(password, salt)
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(password, salt);
 
-    //Create user
+    // Create user
     const user = await User.create({
-        userName: req.body.userName,
-        email: req.body.email,
-        password: hashsedPassword,
-        status: "NEW"
-    })
+        userName,
+        email,
+        password: hashedPassword,
+        profileImage,
+        organization,
+        role,
+        cv,
+        appliedjobs: appliedjobs || [],
+        shortlistedjobs: shortlistedjobs || []
+    });
 
-  
-    
+    logger.trace("[userController] :: createUser() : User created successfully");
+    res.status(201).json({
+        message: "User created successfully",
+        user,
+    });
+
     logger.trace("[userController] :: createUser() : End");
-})
+});
+
 
 // @desc    edit a user
 // @route   PUT /api/v1/users/:id
