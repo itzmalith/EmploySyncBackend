@@ -16,8 +16,11 @@ const jwt = require('jsonwebtoken');
 
 // Utility to generate JWT
 const generateToken = (id) => {
+    if (!process.env.JWT_SECRET) {
+        throw new Error("JWT_SECRET is not defined in environment variables");
+    }
     return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: "1d" });
-  };
+};
 
 // @desc    Authenticate a user
 // @route   POST /api/v1/auth
@@ -34,7 +37,7 @@ const authenticate = asyncHanlder(async (req, res) => {
       try {
         user.profileImage = await s3Util.generateProfileImagePresignedURL(user.profileImage);
       } catch (err) {
-        // handle error 
+        console.log(err);
       }
     }
     
