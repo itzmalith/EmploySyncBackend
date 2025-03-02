@@ -13,6 +13,9 @@ const { v1: uuidv1 } = require('uuid');
 const config = require('config');
 const basicUtil = require("../utils/basic.util.js");
 const Cv = require('../models/cv.model');
+const { log } = require('console');
+const Role = require('../models/role.model');  
+
 
 // @desc    Authenticate a user
 // @route   GET /api/v1/users
@@ -290,9 +293,66 @@ const deleteUserCv = asyncHandler(async (req, res) => {
     logger.trace('[userController] :: deleteUserCv() : End');
 });
 
+// @desc    Get all recruiters
+// @route   GET http://127.0.0.1:3000/api/v1/users/get/recruiters
+// @access  Public
+const getRecruiters = asyncHandler(async (req, res) => {
+    try {
+        // Find the role ID for "recruiter"
+        const recruiterRole = await Role.findOne({ name: "recruiter" });
+
+        if (!recruiterRole) {
+            return res.status(404).json({ message: "Recruiter role not found" });
+        }
+
+        // Find all users with that role
+        const recruiters = await User.find({ role: recruiterRole._id }).select('-password');
+
+        if (recruiters.length === 0) {
+            return res.status(404).json({ message: "No recruiters found" });
+        }
+
+        res.status(200).json(recruiters);
+    } catch (error) {
+        res.status(500).json({ message: "Internal server error", error: error.message });
+    }
+});
+
+// @desc    Get all applicants
+// @route   GET http://127.0.0.1:3000/api/v1/users/get/applicants
+// @access  Public
+const getApplicants = asyncHandler(async (req, res) => {
+    try {
+        // Find the role ID for "applicant"
+        console.log("test1");
+        const applicantRole = await Role.findOne({ name: "applicant" });
+        console.log("test2");
+        
+
+        if (!applicantRole || !applicantRole._id) {
+            return res.status(404).json({ message: "Applicant role not found" });
+        }else{
+            console.log("found");
+        }
+
+        // Find all users with that role
+        const applicants = await User.find({ role: applicantRole._id }).select('-password');
+
+        if (!applicants || applicants.length === 0) {
+            return res.status(404).json({ message: "No applicants found" });
+        }
+
+        res.status(200).json(applicants);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Internal server error", error: error.message });
+    }
+});
 
 
 module.exports = {
+    getApplicants,
+    getRecruiters,
     createUser,
     editUser,
     deleteUser,

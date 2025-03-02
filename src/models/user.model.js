@@ -20,7 +20,8 @@ const userSchema = mongoose.Schema({
 
     organization:{ type: mongoose.ObjectId, ref: "Organization"},
 
-    role: { type: mongoose.Schema.Types.ObjectId, ref: "Role", required: true }, 
+    role: { type: mongoose.Schema.Types.ObjectId, ref: "Role", required: true },
+
 
     cv: { type: mongoose.ObjectId, ref: "Cv" },
 

@@ -58,3 +58,22 @@
 [2025-03-01T11:54:05.333] [TRACE] default - [organizationController] :: getOrganizationJobs() : End
 [2025-03-01T11:54:17.573] [TRACE] default - [organizationController] :: getOrganization() : Start
 [2025-03-01T11:54:17.784] [TRACE] default - [organizationController] :: getOrganization() : End
+[2025-03-01T12:10:24.226] [TRACE] default - [authController] :: authenticate() : Start
+[2025-03-01T12:10:26.788] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-01T12:10:26.797] [TRACE] default - [authController] :: authenticate() : End
+[2025-03-01T15:20:50.754] [TRACE] default - [userController] :: getUserById() : Start
+[2025-03-01T15:22:45.869] [TRACE] default - [userController] :: getUserById() : Start
+[2025-03-01T15:22:47.130] [TRACE] default - [userController] :: getUserById() : Start
+[2025-03-01T15:23:42.269] [TRACE] default - [userController] :: getUserById() : Start
+[2025-03-01T15:23:44.743] [TRACE] default - [userController] :: getUserById() : Start
+[2025-03-01T15:24:50.137] [TRACE] default - [userController] :: getUserById() : Start
+[2025-03-01T15:24:51.683] [TRACE] default - [userController] :: getUserById() : Start
+[2025-03-02T01:42:51.316] [TRACE] default - [userController] :: getUserById() : Start
+[2025-03-02T01:43:26.541] [TRACE] default - [userController] :: getUserById() : Start
+[2025-03-02T01:46:51.749] [TRACE] default - [userController] :: getUserById() : Start
+[2025-03-02T01:48:22.208] [TRACE] default - [userController] :: getUserById() : Start
+[2025-03-02T01:48:23.308] [TRACE] default - [userController] :: getUserById() : Start
+[2025-03-02T01:49:22.565] [TRACE] default - [userController] :: getUserById() : Start
+[2025-03-02T01:49:23.688] [TRACE] default - [userController] :: getUserById() : Start
+[2025-03-02T01:51:29.092] [TRACE] default - [userController] :: getUserById() : Start
+[2025-03-02T01:51:48.037] [TRACE] default - [userController] :: getUserById() : Start
