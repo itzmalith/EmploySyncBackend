@@ -335,6 +335,7 @@ const getRecruiters = asyncHandler(async (req, res) => {
 // @route   GET http://127.0.0.1:3000/api/v1/users/get/applicants
 // @access  Public
 const getApplicants = asyncHandler(async (req, res) => {
+    logger.trace('[userController] :: getApplicants() Start');
     try {
         // Find the role ID for "applicant"
         console.log("test1");
@@ -360,6 +361,7 @@ const getApplicants = asyncHandler(async (req, res) => {
         console.error(error);
         res.status(500).json({ message: "Internal server error", error: error.message });
     }
+    logger.trace('[userController] :: getApplicants() End');
 });
 
 
