@@ -11,3 +11,5 @@
 [2025-03-01T09:35:46.809] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
 [2025-03-01T09:37:16.659] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
 [2025-03-01T12:10:26.788] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-04T05:49:53.837] [ERROR] default - [userController] :: createUserCv() : CV already exists for user
+[2025-03-04T05:58:50.676] [ERROR] default - [userController] :: getUserCv() : Role not found for user

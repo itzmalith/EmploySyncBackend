@@ -77,3 +77,26 @@
 [2025-03-02T01:49:23.688] [TRACE] default - [userController] :: getUserById() : Start
 [2025-03-02T01:51:29.092] [TRACE] default - [userController] :: getUserById() : Start
 [2025-03-02T01:51:48.037] [TRACE] default - [userController] :: getUserById() : Start
+[2025-03-04T05:30:02.107] [TRACE] default - [organizationController] :: getOrganizationJobs() : Start
+[2025-03-04T05:30:05.275] [TRACE] default - [organizationController] :: getOrganizationJobs() : End
+[2025-03-04T05:46:52.468] [TRACE] default - [userController] :: createUserCv() : Start
+[2025-03-04T05:46:53.855] [TRACE] default - [userController] :: createUserCv() : End
+[2025-03-04T05:49:16.349] [TRACE] default - [userController] :: getUserCv() : Start
+[2025-03-04T05:49:16.501] [TRACE] default - [userController] :: getUserCv() : End
+[2025-03-04T05:49:24.955] [TRACE] default - [userController] :: getUserCv() : Start
+[2025-03-04T05:49:25.081] [TRACE] default - [userController] :: getUserCv() : End
+[2025-03-04T05:49:46.421] [TRACE] default - [userController] :: getUserCv() : Start
+[2025-03-04T05:49:46.562] [TRACE] default - [userController] :: getUserCv() : End
+[2025-03-04T05:49:53.465] [TRACE] default - [userController] :: createUserCv() : Start
+[2025-03-04T05:49:53.837] [ERROR] default - [userController] :: createUserCv() : CV already exists for user
+[2025-03-04T05:50:03.628] [TRACE] default - [userController] :: getUserCv() : Start
+[2025-03-04T05:50:03.796] [TRACE] default - [userController] :: getUserCv() : End
+[2025-03-04T05:53:25.836] [TRACE] default - [userController] :: getUserCv() : Start
+[2025-03-04T05:55:03.201] [TRACE] default - [userController] :: getUserCv() : Start
+[2025-03-04T05:55:03.365] [TRACE] default - [userController] :: getUserCv() : End
+[2025-03-04T05:58:50.401] [TRACE] default - [userController] :: getUserCv() : Start
+[2025-03-04T05:58:50.676] [ERROR] default - [userController] :: getUserCv() : Role not found for user
+[2025-03-04T06:01:55.430] [TRACE] default - [userController] :: getUserCv() : Start
+[2025-03-04T06:01:55.629] [TRACE] default - [userController] :: getUserCv() : End
+[2025-03-04T06:03:30.181] [TRACE] default - [userController] :: getUserCv() : Start
+[2025-03-04T06:03:30.427] [TRACE] default - [userController] :: getUserCv() : End

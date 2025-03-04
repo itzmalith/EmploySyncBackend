@@ -12,9 +12,9 @@ const mime = require('mime-types')
 const { v1: uuidv1 } = require('uuid');
 const config = require('config');
 const basicUtil = require("../utils/basic.util.js");
-const Cv = require('../models/cv.model');
 const { log } = require('console');
-const Role = require('../models/role.model');  
+const Role = require('../models/role.model'); 
+const Cv = require('../models/cv.model.js') 
 
 
 // @desc    Authenticate a user
@@ -190,18 +190,29 @@ const deleteUser = asyncHandler(async (req, res) => {
 // @route   GET /api/v1/users/:id/cv
 const getUserCv = asyncHandler(async (req, res) => {
     logger.trace('[userController] :: getUserCv() : Start');
-    
-    const userId = req.params.id;
-    const user = await User.findById(userId).populate('cv').select('-password');
 
-    if (!user) {
-        logger.error('[userController] :: getUserCv() : User not found');
-        throw new AppError(404, 'User not found');
+    const userId = req.params.id;
+
+    if (!userId) {
+        logger.error('[userController] :: getUserCv() : Missing user ID');
+        return res.status(400).json({ message: 'User ID is required' });
     }
 
-    res.status(200).json(user.cv);
+    // First, find the role of the user
+    const userCv = await Cv.findOne({ user: userId });
+
+    if (!userCv) {
+        logger.error('[userController] :: getUserCv() : Role not found for user');
+        throw new AppError(404, 'User role not found');
+    }
+
+    
+
+    res.status(200).json(userCv);
     logger.trace('[userController] :: getUserCv() : End');
 });
+
+
 
 // @desc    Get user's Organization
 // @route   GET /api/v1/users/:id/organization
@@ -297,6 +308,7 @@ const deleteUserCv = asyncHandler(async (req, res) => {
 // @route   GET http://127.0.0.1:3000/api/v1/users/get/recruiters
 // @access  Public
 const getRecruiters = asyncHandler(async (req, res) => {
+    logger.trace('[userController] :: getRecruiters() : Start');
     try {
         // Find the role ID for "recruiter"
         const recruiterRole = await Role.findOne({ name: "recruiter" });
@@ -316,6 +328,7 @@ const getRecruiters = asyncHandler(async (req, res) => {
     } catch (error) {
         res.status(500).json({ message: "Internal server error", error: error.message });
     }
+    logger.trace('[userController] :: getRecruiters() : End');
 });
 
 // @desc    Get all applicants
