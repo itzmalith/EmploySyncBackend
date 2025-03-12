@@ -13,3 +13,15 @@
 [2025-03-01T12:10:26.788] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
 [2025-03-04T05:49:53.837] [ERROR] default - [userController] :: createUserCv() : CV already exists for user
 [2025-03-04T05:58:50.676] [ERROR] default - [userController] :: getUserCv() : Role not found for user
+[2025-03-12T03:42:35.643] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-12T03:46:58.666] [ERROR] default - [authController] :: authenticate() : Unauthorized user
+[2025-03-12T03:47:03.302] [ERROR] default - [authController] :: authenticate() : Unauthorized user
+[2025-03-12T03:47:11.602] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-12T03:47:39.996] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-12T03:47:56.132] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-12T03:53:51.131] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-12T03:54:40.595] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-12T12:39:44.190] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-12T12:49:11.023] [ERROR] default - [userController] :: getUserCv() : Role not found for user
+[2025-03-12T12:49:12.312] [ERROR] default - [userController] :: getUserCv() : Role not found for user
+[2025-03-12T14:02:52.247] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
