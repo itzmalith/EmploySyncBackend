@@ -16,9 +16,6 @@ const jobSchema = mongoose.Schema({
         type: Number,
         required: true
     },
-    jobDescription: {  
-        type: String,
-    },
     yearOfExperience: { 
         type: Number,
         required: true
