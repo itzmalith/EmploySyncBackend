@@ -32,3 +32,21 @@
 [2025-03-28T02:26:25.267] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
 [2025-03-28T03:35:17.059] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
 [2025-03-28T03:35:22.900] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T03:41:10.949] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T03:46:50.569] [ERROR] default - [userController] :: getUserCv() : Role not found for user
+[2025-03-28T03:46:51.595] [ERROR] default - [userController] :: getUserCv() : Role not found for user
+[2025-03-28T03:46:52.038] [ERROR] default - [userController] :: getUserCv() : Role not found for user
+[2025-03-28T03:55:43.401] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T04:00:18.004] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T04:00:18.141] [ERROR] default - [organizationController] :: getOrganization() : Organization with ID 60f7c3bfc25e4b3f88fba2c1 not found
+[2025-03-28T04:02:32.456] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T04:03:30.902] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T04:03:48.886] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T04:04:44.546] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T04:59:55.567] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T05:00:30.889] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T05:01:32.042] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T05:02:46.761] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T05:06:43.288] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T05:07:20.098] [ERROR] default - [userController] :: createUserCv() : CV already exists for user
+[2025-03-28T05:07:27.542] [ERROR] default - [userController] :: createUserCv() : CV already exists for user

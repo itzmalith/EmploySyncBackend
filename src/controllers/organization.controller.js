@@ -1,7 +1,7 @@
 const asyncHandler = require('express-async-handler');
 const Job = require('../models/job.model');
-const Organization = require('../models/organization.model'); // ✅ Import Organization model
-const i18n = require('i18n'); // ✅ Declare properly
+const Organization = require('../models/organization.model');
+const i18n = require('i18n');
 const logger = require('../utils/log4jsutil');
 const AppError = require('../utils/app.error');
 
