@@ -22,12 +22,12 @@ const userSchema = mongoose.Schema({
 
     role: { type: mongoose.Schema.Types.ObjectId, ref: "Role", required: true },
 
-
     cv: { type: mongoose.ObjectId, ref: "Cv" },
 
     appliedjobs: [{ type: mongoose.ObjectId, ref: "Jobs" }],
     
     shortlistedjobs: [{ type: mongoose.ObjectId, ref: "Jobs" }]
+    
 })
 
 module.exports = mongoose.model('User', userSchema)

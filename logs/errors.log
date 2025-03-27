@@ -25,3 +25,7 @@
 [2025-03-12T12:49:11.023] [ERROR] default - [userController] :: getUserCv() : Role not found for user
 [2025-03-12T12:49:12.312] [ERROR] default - [userController] :: getUserCv() : Role not found for user
 [2025-03-12T14:02:52.247] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-26T10:50:55.677] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-27T16:25:34.507] [ERROR] default - [authController] :: authenticate() : Unauthorized user
+[2025-03-27T16:25:38.247] [ERROR] default - [authController] :: authenticate() : Unauthorized user
+[2025-03-27T16:25:44.287] [ERROR] default - [authController] :: authenticate() : Unauthorized user

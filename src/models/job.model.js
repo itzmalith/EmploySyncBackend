@@ -20,6 +20,7 @@ const jobSchema = mongoose.Schema({
         ref: 'Organization',  // Reference to Organization model
         required: true
     }
+    
 }, { timestamps: true });
 
 module.exports = mongoose.model('Job', jobSchema);
