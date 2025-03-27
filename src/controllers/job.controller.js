@@ -71,9 +71,16 @@ const getShortlistedApplicants = asyncHandler(async (req, res) => {
   res.status(200).json(shortlisted);
 });
 
+// Get all jobs
+const getAllJobs = asyncHandler(async (req, res) => {
+  const jobs = await Job.find().populate('organization', 'name');
+  res.status(200).json(jobs);
+});
+
 module.exports = {
   applyToJob,
   shortlistApplicant,
   getJobApplicants,
   getShortlistedApplicants,
+  getAllJobs
 };

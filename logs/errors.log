@@ -29,3 +29,6 @@
 [2025-03-27T16:25:34.507] [ERROR] default - [authController] :: authenticate() : Unauthorized user
 [2025-03-27T16:25:38.247] [ERROR] default - [authController] :: authenticate() : Unauthorized user
 [2025-03-27T16:25:44.287] [ERROR] default - [authController] :: authenticate() : Unauthorized user
+[2025-03-28T02:26:25.267] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T03:35:17.059] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T03:35:22.900] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
