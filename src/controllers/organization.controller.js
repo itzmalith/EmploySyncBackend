@@ -190,6 +190,23 @@ const deleteOrganization = asyncHandler(async (req, res) => {
     logger.trace('[organizationController] :: deleteOrganization() : End');
 });
 
+// @desc    Get all jobs across all organizations
+// @route   GET /api/v1/organization/jobs
+// @access  Private
+const getAllJobs = asyncHandler(async (req, res) => {
+    logger.trace('[organizationController] :: getAllJobs() : Start');
+
+    const jobs = await Job.find().populate('organization');
+
+    if (!jobs || jobs.length === 0) {
+        logger.error('[organizationController] :: getAllJobs() : No jobs found');
+        throw new AppError(404, 'No jobs found');
+    }
+
+    res.status(200).json(jobs);
+    logger.trace('[organizationController] :: getAllJobs() : End');
+});
+
 module.exports = {
     createJob,
     getOrganizationJobs,
@@ -199,5 +216,6 @@ module.exports = {
     createOrganization,
     getOrganization,
     updateOrganization,
-    deleteOrganization
+    deleteOrganization,
+    getAllJobs,
 };

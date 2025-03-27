@@ -455,3 +455,8 @@
 [2025-03-27T16:25:38.247] [ERROR] default - [authController] :: authenticate() : Unauthorized user
 [2025-03-27T16:25:44.173] [TRACE] default - [authController] :: authenticate() : Start
 [2025-03-27T16:25:44.287] [ERROR] default - [authController] :: authenticate() : Unauthorized user
+[2025-03-27T22:19:51.991] [TRACE] default - [organizationController] :: getOrganization() : Start
+[2025-03-27T22:21:31.744] [TRACE] default - [organizationController] :: getOrganization() : Start
+[2025-03-27T22:21:32.608] [TRACE] default - [organizationController] :: getOrganization() : Start
+[2025-03-27T22:21:48.056] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-27T22:21:48.261] [TRACE] default - [organizationController] :: getAllJobs() : End
