@@ -16,7 +16,6 @@ const { log } = require('console');
 const Role = require('../models/role.model'); 
 const Cv = require('../models/cv.model.js') 
 
-
 // @desc    Authenticate a user
 // @route   GET /api/v1/users
 // @access  Public
@@ -106,7 +105,6 @@ const createUser = asyncHandler(async (req, res) => {
     logger.trace("[userController] :: createUser() : End");
 });
 
-
 // @desc    edit a user
 // @route   PUT /api/v1/users/:id
 // @access  Private
@@ -167,7 +165,6 @@ const editUser = asyncHandler(async (req, res) => {
     logger.trace("[userController] :: editUser() : End");
 })
 
-
 // @desc Delete user
 // @route DELETE /api/v1/users/:id
 // @access Private
@@ -211,8 +208,6 @@ const getUserCv = asyncHandler(async (req, res) => {
     res.status(200).json(userCv);
     logger.trace('[userController] :: getUserCv() : End');
 });
-
-
 
 // @desc    Get user's Organization
 // @route   GET /api/v1/users/:id/organization
@@ -363,7 +358,6 @@ const getApplicants = asyncHandler(async (req, res) => {
     }
     logger.trace('[userController] :: getApplicants() End');
 });
-
 
 module.exports = {
     getApplicants,
