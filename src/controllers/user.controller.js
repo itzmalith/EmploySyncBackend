@@ -119,10 +119,11 @@ const editUser = asyncHandler(async (req, res) => {
     }
 
     let updates = {
-        ...(req.body.userName !== null && req.body.userName != "" && { userName: req.body.userName }),
-        ...(req.body.email !== null && req.body.email != "" && { email: req.body.email }),
-        ...(req.body.allergens && Array.isArray(req.body.allergens) && { allergens: req.body.allergens }) 
-    }
+        ...(req.body.userName !== null && req.body.userName !== "" && { userName: req.body.userName }),
+        ...(req.body.email !== null && req.body.email !== "" && { email: req.body.email }),
+        ...(req.body.allergens && Array.isArray(req.body.allergens) && { allergens: req.body.allergens }),
+        ...(req.body.cv && mongoose.Types.ObjectId.isValid(req.body.cv) && { cv: req.body.cv })
+    };    
 
     updates.age = req.body.age;
     updates.weight = req.body.weight;
@@ -149,10 +150,14 @@ const editUser = asyncHandler(async (req, res) => {
 
 
     const emailRegex = /^([a-zA-Z0-9_\.-]+)@([a-zA-Z0-9_\.-]+)\.([a-zA-Z]{2,6})$/;
-    if (!emailRegex.test(updates.email)) {
-        logger.error("[userController] :: editUser() : Invalid email format");
-        throw new AppError(400, i18n.__("ERROR_INVALID_EMAIL_FORMAT"));
+    if (updates.email !== undefined) {
+        const emailRegex = /^([a-zA-Z0-9_\.-]+)@([a-zA-Z0-9_\.-]+)\.([a-zA-Z]{2,6})$/;
+        if (!emailRegex.test(updates.email)) {
+            logger.error("[userController] :: editUser() : Invalid email format");
+            throw new AppError(400, i18n.__("ERROR_INVALID_EMAIL_FORMAT"));
+        }
     }
+    
 
     const updatedUser = await User.findByIdAndUpdate(userId, updates, { new: true })
 
