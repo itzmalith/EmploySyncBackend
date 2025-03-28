@@ -168,6 +168,18 @@ const updateOrganization = asyncHandler(async (req, res) => {
     logger.trace('[organizationController] :: updateOrganization() : End');
 });
 
+// @desc    Get all organizations
+// @route   GET /api/v1/organizations
+// @access  Private
+const getOrganizations = asyncHandler(async (req, res) => {
+    logger.trace('[organizationController] :: getOrganizations() : Start');
+    
+    const organizations = await Organization.find().populate('users jobs');
+    
+    res.status(200).json(organizations);
+    logger.trace('[organizationController] :: getOrganizations() : End');
+});
+
 // @desc    Delete an organization
 // @route   DELETE /api/v1/organization/:id
 // @access  Private
@@ -213,4 +225,5 @@ module.exports = {
     updateOrganization,
     deleteOrganization,
     getAllJobs,
+    getOrganizations
 };

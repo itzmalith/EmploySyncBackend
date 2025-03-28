@@ -61,3 +61,20 @@
 [2025-03-28T06:03:23.996] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
 [2025-03-28T06:06:40.416] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
 [2025-03-28T06:46:18.986] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T10:46:01.732] [ERROR] default - [userController] :: createUserCv() : CV already exists for user
+[2025-03-28T16:49:24.738] [ERROR] default - [authController] :: authenticate() : Unauthorized user
+[2025-03-28T16:49:39.154] [ERROR] default - [authController] :: authenticate() : Unauthorized user
+[2025-03-28T16:50:51.551] [ERROR] default - [authController] :: authenticate() : Unauthorized user
+[2025-03-28T16:50:59.130] [ERROR] default - [authController] :: authenticate() : Unauthorized user
+[2025-03-28T16:51:40.452] [ERROR] default - [authController] :: authenticate() : Unauthorized user
+[2025-03-28T18:07:57.774] [ERROR] default - [userController] :: createUser() : Invalid username format
+[2025-03-28T18:07:58.664] [ERROR] default - [userController] :: createUser() : Invalid username format
+[2025-03-28T18:07:59.108] [ERROR] default - [userController] :: createUser() : Invalid username format
+[2025-03-28T18:07:59.296] [ERROR] default - [userController] :: createUser() : Invalid username format
+[2025-03-28T18:07:59.484] [ERROR] default - [userController] :: createUser() : Invalid username format
+[2025-03-28T18:08:01.333] [ERROR] default - [userController] :: createUser() : Invalid username format
+[2025-03-28T18:08:01.488] [ERROR] default - [userController] :: createUser() : Invalid username format
+[2025-03-28T18:08:01.674] [ERROR] default - [userController] :: createUser() : Invalid username format
+[2025-03-28T18:08:01.939] [ERROR] default - [userController] :: createUser() : Invalid username format
+[2025-03-28T18:08:27.198] [ERROR] default - [userController] :: createUser() : Invalid username format
+[2025-03-28T18:08:51.628] [ERROR] default - [userController] :: createUser() : Email already exists

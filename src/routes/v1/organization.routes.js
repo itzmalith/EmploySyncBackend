@@ -11,7 +11,8 @@ const {
     updateOrganization, 
     deleteOrganization,
     getOrganizationJobs,
-    getAllJobs
+    getAllJobs,
+    getOrganizations
 } = require('../../controllers/organization.controller');
 
 router.get('/jobs', getAllJobs); // Get all jobs across all organizations
@@ -28,5 +29,6 @@ router.get('/:id/jobs', getOrganizationJobs); // Get jobs by organization ID
 router.put('/jobs/:id', updateJob); // Update a job
 router.delete('/jobs/:id', deleteJob); // Delete a job
 router.patch('/jobs/:id/status', changeJobStatus); // Change job status
+router.get('/',getOrganizations);
 
 module.exports = router;
