@@ -795,3 +795,210 @@
 [2025-03-28T05:07:20.098] [ERROR] default - [userController] :: createUserCv() : CV already exists for user
 [2025-03-28T05:07:27.442] [TRACE] default - [userController] :: createUserCv() : Start
 [2025-03-28T05:07:27.542] [ERROR] default - [userController] :: createUserCv() : CV already exists for user
+[2025-03-28T05:22:27.655] [TRACE] default - [userController] :: createUser() : Start
+[2025-03-28T05:22:27.970] [TRACE] default - [userController] :: createUser() : User created successfully
+[2025-03-28T05:22:27.971] [TRACE] default - [userController] :: createUser() : End
+[2025-03-28T05:24:20.858] [TRACE] default - [userController] :: createUser() : Start
+[2025-03-28T05:24:21.127] [TRACE] default - [userController] :: createUser() : User created successfully
+[2025-03-28T05:24:21.128] [TRACE] default - [userController] :: createUser() : End
+[2025-03-28T05:25:50.305] [TRACE] default - [userController] :: createUser() : Start
+[2025-03-28T05:25:50.591] [TRACE] default - [userController] :: createUser() : User created successfully
+[2025-03-28T05:25:50.593] [TRACE] default - [userController] :: createUser() : End
+[2025-03-28T05:40:43.742] [TRACE] default - [userController] :: createUser() : Start
+[2025-03-28T05:40:43.744] [ERROR] default - [userController] :: createUser() : Invalid username format
+[2025-03-28T05:40:51.500] [TRACE] default - [userController] :: createUser() : Start
+[2025-03-28T05:40:51.501] [ERROR] default - [userController] :: createUser() : Invalid username format
+[2025-03-28T05:41:39.377] [TRACE] default - [userController] :: createUser() : Start
+[2025-03-28T05:41:39.378] [ERROR] default - [userController] :: createUser() : Invalid username format
+[2025-03-28T05:43:26.753] [TRACE] default - [userController] :: createUser() : Start
+[2025-03-28T05:43:27.061] [TRACE] default - [userController] :: createUser() : User created successfully
+[2025-03-28T05:43:27.062] [TRACE] default - [userController] :: createUser() : End
+[2025-03-28T05:43:29.123] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T05:43:29.357] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T05:44:08.989] [TRACE] default - [userController] :: createUser() : Start
+[2025-03-28T05:44:09.259] [TRACE] default - [userController] :: createUser() : User created successfully
+[2025-03-28T05:44:09.260] [TRACE] default - [userController] :: createUser() : End
+[2025-03-28T05:48:56.712] [TRACE] default - [authController] :: authenticate() : Start
+[2025-03-28T05:48:57.852] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T05:48:57.859] [TRACE] default - [authController] :: authenticate() : End
+[2025-03-28T05:48:57.910] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T05:48:58.114] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T05:49:01.703] [TRACE] default - [authController] :: authenticate() : Start
+[2025-03-28T05:49:02.776] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T05:49:02.781] [TRACE] default - [authController] :: authenticate() : End
+[2025-03-28T05:49:02.785] [TRACE] default - [organizationController] :: getOrganization() : Start
+[2025-03-28T05:49:02.995] [TRACE] default - [organizationController] :: getOrganization() : End
+[2025-03-28T05:49:36.717] [TRACE] default - [authController] :: authenticate() : Start
+[2025-03-28T05:49:37.790] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T05:49:37.794] [TRACE] default - [authController] :: authenticate() : End
+[2025-03-28T05:49:37.797] [TRACE] default - [organizationController] :: getOrganization() : Start
+[2025-03-28T05:49:38.001] [TRACE] default - [organizationController] :: getOrganization() : End
+[2025-03-28T05:50:55.172] [TRACE] default - [authController] :: authenticate() : Start
+[2025-03-28T05:50:56.225] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T05:50:56.229] [TRACE] default - [authController] :: authenticate() : End
+[2025-03-28T05:50:56.279] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T05:50:56.481] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T05:51:06.685] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T05:51:06.790] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T05:51:07.771] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T05:51:07.978] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T05:51:08.993] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T05:51:09.096] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T05:51:10.704] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T05:51:10.911] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T05:55:01.016] [TRACE] default - [authController] :: authenticate() : Start
+[2025-03-28T05:55:02.129] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T05:55:02.136] [TRACE] default - [authController] :: authenticate() : End
+[2025-03-28T06:01:39.300] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:01:39.509] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:01:47.330] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:01:47.538] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:02:30.286] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:02:30.491] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:02:36.282] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:02:36.487] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:03:00.853] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:03:01.057] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:03:10.273] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:03:10.381] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:03:11.343] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:03:11.553] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:03:12.016] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:03:12.120] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:03:22.864] [TRACE] default - [authController] :: authenticate() : Start
+[2025-03-28T06:03:23.996] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T06:03:24.001] [TRACE] default - [authController] :: authenticate() : End
+[2025-03-28T06:03:24.052] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:03:24.256] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:06:09.672] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:06:09.876] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:06:18.320] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:06:18.524] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:06:39.332] [TRACE] default - [authController] :: authenticate() : Start
+[2025-03-28T06:06:40.416] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T06:06:40.423] [TRACE] default - [authController] :: authenticate() : End
+[2025-03-28T06:06:40.426] [TRACE] default - [organizationController] :: getOrganization() : Start
+[2025-03-28T06:06:40.631] [TRACE] default - [organizationController] :: getOrganization() : End
+[2025-03-28T06:07:22.681] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:07:22.784] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:16:22.337] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:16:22.456] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:16:57.277] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:16:57.383] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:16:59.289] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:16:59.391] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:17:00.288] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:17:00.393] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:17:47.300] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:17:47.403] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:18:06.335] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:18:06.439] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:19:30.776] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:19:30.882] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:19:37.337] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:19:37.441] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:19:40.948] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:19:41.051] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:21:51.165] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:21:51.268] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:23:13.275] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:23:13.379] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:24:01.296] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:24:01.401] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:24:06.284] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:24:06.407] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:24:10.063] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:24:10.165] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:24:11.452] [TRACE] default - [organizationController] :: getOrganizationJobs() : Start
+[2025-03-28T06:24:11.555] [TRACE] default - [organizationController] :: getOrganizationJobs() : End
+[2025-03-28T06:31:35.238] [TRACE] default - [organizationController] :: createJob() : Start
+[2025-03-28T06:31:51.606] [TRACE] default - [organizationController] :: createJob() : Start
+[2025-03-28T06:33:28.887] [TRACE] default - [organizationController] :: createJob() : Start
+[2025-03-28T06:33:29.121] [TRACE] default - [organizationController] :: createJob() : End
+[2025-03-28T06:33:30.424] [TRACE] default - [organizationController] :: getOrganizationJobs() : Start
+[2025-03-28T06:33:30.526] [TRACE] default - [organizationController] :: getOrganizationJobs() : End
+[2025-03-28T06:33:50.793] [TRACE] default - [organizationController] :: getOrganizationJobs() : Start
+[2025-03-28T06:33:50.896] [TRACE] default - [organizationController] :: getOrganizationJobs() : End
+[2025-03-28T06:33:52.596] [TRACE] default - [organizationController] :: getOrganizationJobs() : Start
+[2025-03-28T06:33:52.699] [TRACE] default - [organizationController] :: getOrganizationJobs() : End
+[2025-03-28T06:33:53.306] [TRACE] default - [organizationController] :: getOrganizationJobs() : Start
+[2025-03-28T06:33:53.410] [TRACE] default - [organizationController] :: getOrganizationJobs() : End
+[2025-03-28T06:35:31.304] [TRACE] default - [userController] :: getApplicants() Start
+[2025-03-28T06:35:31.516] [TRACE] default - [userController] :: getApplicants() End
+[2025-03-28T06:38:15.825] [TRACE] default - [organizationController] :: getOrganizationJobs() : Start
+[2025-03-28T06:38:15.827] [TRACE] default - [userController] :: getApplicants() Start
+[2025-03-28T06:38:15.928] [TRACE] default - [organizationController] :: getOrganizationJobs() : End
+[2025-03-28T06:38:16.025] [TRACE] default - [userController] :: getApplicants() End
+[2025-03-28T06:38:21.059] [TRACE] default - [organizationController] :: getOrganizationJobs() : Start
+[2025-03-28T06:38:21.060] [TRACE] default - [userController] :: getApplicants() Start
+[2025-03-28T06:38:21.154] [TRACE] default - [organizationController] :: getOrganizationJobs() : End
+[2025-03-28T06:38:21.262] [TRACE] default - [userController] :: getApplicants() End
+[2025-03-28T06:38:43.334] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:38:43.437] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:42:06.838] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:42:06.944] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:42:14.409] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:42:14.514] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:42:19.436] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:42:19.542] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:42:28.766] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:42:28.871] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:42:48.462] [TRACE] default - [organizationController] :: getOrganizationJobs() : Start
+[2025-03-28T06:42:48.566] [TRACE] default - [organizationController] :: getOrganizationJobs() : End
+[2025-03-28T06:43:13.986] [TRACE] default - [organizationController] :: getOrganizationJobs() : Start
+[2025-03-28T06:43:14.100] [TRACE] default - [organizationController] :: getOrganizationJobs() : End
+[2025-03-28T06:43:15.221] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:43:15.323] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:44:03.393] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:44:03.496] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:44:04.381] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:44:04.484] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:44:09.210] [TRACE] default - [organizationController] :: getOrganizationJobs() : Start
+[2025-03-28T06:44:09.314] [TRACE] default - [organizationController] :: getOrganizationJobs() : End
+[2025-03-28T06:44:10.452] [TRACE] default - [organizationController] :: getOrganizationJobs() : Start
+[2025-03-28T06:44:10.555] [TRACE] default - [organizationController] :: getOrganizationJobs() : End
+[2025-03-28T06:44:11.974] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:44:12.077] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:45:46.261] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:45:46.365] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:45:56.287] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:45:56.391] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:45:59.267] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:45:59.369] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:46:00.739] [TRACE] default - [organizationController] :: getOrganizationJobs() : Start
+[2025-03-28T06:46:00.841] [TRACE] default - [organizationController] :: getOrganizationJobs() : End
+[2025-03-28T06:46:08.471] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:46:08.573] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:46:09.738] [TRACE] default - [organizationController] :: getOrganizationJobs() : Start
+[2025-03-28T06:46:09.839] [TRACE] default - [organizationController] :: getOrganizationJobs() : End
+[2025-03-28T06:46:17.778] [TRACE] default - [authController] :: authenticate() : Start
+[2025-03-28T06:46:18.986] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T06:46:18.994] [TRACE] default - [authController] :: authenticate() : End
+[2025-03-28T06:46:19.052] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:46:19.259] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:46:21.327] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:46:21.432] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:46:22.273] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:46:22.482] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:47:42.463] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:47:42.665] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:49:02.303] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:49:02.507] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:49:09.937] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:49:10.143] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:49:10.867] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:49:11.074] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:50:15.422] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:50:15.627] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:50:22.233] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:50:22.435] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:50:38.617] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:50:38.718] [TRACE] default - [userController] :: getUsers() : End
+[2025-03-28T06:50:40.138] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:50:40.358] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:51:30.031] [TRACE] default - [userController] :: createUserCv() : Start
+[2025-03-28T06:51:30.250] [TRACE] default - [userController] :: createUserCv() : End
+[2025-03-28T06:51:38.951] [TRACE] default - [organizationController] :: getAllJobs() : Start
+[2025-03-28T06:51:39.156] [TRACE] default - [organizationController] :: getAllJobs() : End
+[2025-03-28T06:51:39.423] [TRACE] default - userController] :: getUsers() : Start
+[2025-03-28T06:51:39.528] [TRACE] default - [userController] :: getUsers() : End

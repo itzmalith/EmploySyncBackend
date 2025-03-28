@@ -50,3 +50,14 @@
 [2025-03-28T05:06:43.288] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
 [2025-03-28T05:07:20.098] [ERROR] default - [userController] :: createUserCv() : CV already exists for user
 [2025-03-28T05:07:27.542] [ERROR] default - [userController] :: createUserCv() : CV already exists for user
+[2025-03-28T05:40:43.744] [ERROR] default - [userController] :: createUser() : Invalid username format
+[2025-03-28T05:40:51.501] [ERROR] default - [userController] :: createUser() : Invalid username format
+[2025-03-28T05:41:39.378] [ERROR] default - [userController] :: createUser() : Invalid username format
+[2025-03-28T05:48:57.852] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T05:49:02.776] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T05:49:37.790] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T05:50:56.225] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T05:55:02.129] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T06:03:23.996] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T06:06:40.416] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-03-28T06:46:18.986] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null

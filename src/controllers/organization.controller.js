@@ -34,9 +34,6 @@ const createJob = asyncHandler(async (req, res) => {
 // @desc    Get all jobs for an organization
 // @route   GET /api/v1/organization/:id/jobs
 // @access  Private
-// @desc    Get all jobs for an organization
-// @route   GET /api/v1/organization/:id/jobs
-// @access  Private
 const getOrganizationJobs = asyncHandler(async (req, res) => {
     logger.trace('[organizationController] :: getOrganizationJobs() : Start');
     
