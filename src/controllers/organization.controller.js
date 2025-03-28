@@ -51,9 +51,6 @@ const getOrganizationJobs = asyncHandler(async (req, res) => {
     logger.trace('[organizationController] :: getOrganizationJobs() : End');
 });
 
-
-
-
 // @desc    Update a job
 // @route   PUT /api/v1/organization/jobs/:id
 // @access  Private
@@ -148,6 +145,7 @@ const getOrganization = asyncHandler(async (req, res) => {
     res.status(200).json(organization);
     logger.trace('[organizationController] :: getOrganization() : End');
 });
+
 // @desc    Update an organization
 // @route   PUT /api/v1/organization/:id
 // @access  Private
