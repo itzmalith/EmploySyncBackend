@@ -108,62 +108,60 @@ const createUser = asyncHandler(async (req, res) => {
 // @desc    edit a user
 // @route   PUT /api/v1/users/:id
 // @access  Private
+// @desc    Edit a user
+// @route   PUT /api/v1/users/:id
+// @access  Private
 const editUser = asyncHandler(async (req, res) => {
-    logger.trace("[projectController] :: editUser() : Start");
+    logger.trace("[userController] :: editUser() : Start");
 
-    const userId =req.body.userId
-    
-    if (!userId){
+    const userId = req.body.userId;
+    if (!userId) {
         logger.error("[userController] :: editUser() : user id is a must");
         throw new AppError(400, i18n.__("UNAUTHORIZED"));
     }
 
+    // Build the updates object with conditional properties
     let updates = {
-        ...(req.body.userName !== null && req.body.userName != "" && { userName: req.body.userName }),
-        ...(req.body.email !== null && req.body.email != "" && { email: req.body.email }),
-        ...(req.body.allergens && Array.isArray(req.body.allergens) && { allergens: req.body.allergens }) 
-    }
+        ...(req.body.userName !== null && req.body.userName !== "" && { userName: req.body.userName }),
+        ...(req.body.email !== null && req.body.email !== "" && { email: req.body.email }),
+        ...(req.body.profileImage !== null && req.body.profileImage !== "" && { profileImage: req.body.profileImage }),
+        ...(req.body.organization !== null && req.body.organization !== "" && { organization: req.body.organization }),
+        ...(req.body.role !== null && req.body.role !== "" && { role: req.body.role }),
+        ...(req.body.cv !== null && req.body.cv !== "" && { cv: req.body.cv }),
+        ...(req.body.appliedjobs && Array.isArray(req.body.appliedjobs) && { appliedjobs: req.body.appliedjobs }),
+        ...(req.body.shortlistedjobs && Array.isArray(req.body.shortlistedjobs) && { shortlistedjobs: req.body.shortlistedjobs })
+    };
 
-    updates.age = req.body.age;
-    updates.weight = req.body.weight;
-    updates.height = req.body.height;
-
-    const userNameRegex = /^[^\s]{4,100}$/;
+    // Validate the userName if provided
+    if (updates.userName) {
+        const userNameRegex = /^[^\s]{4,100}$/;
         if (!userNameRegex.test(updates.userName)) {
             logger.error("[userController] :: editUser() : Invalid username format");
             throw new AppError(400, i18n.__("ERROR_INVALID_USERNAME_FORMAT"));
         }
 
-
-    if (updates.userName !== undefined) {
+        // Check if the new userName already exists for another user
         const userNameExists = await User.find({
             userName: updates.userName,
-            _id: { $ne: currentUser }
+            _id: { $ne: userId }
         });
-
         if (userNameExists.length > 0) {
             logger.error("[userController] :: editUser() : Username already exists");
             throw new AppError(400, i18n.__("ERROR_USER_ALREADY_EXISTS"));
         }
     }
 
-
-    const emailRegex = /^([a-zA-Z0-9_\.-]+)@([a-zA-Z0-9_\.-]+)\.([a-zA-Z]{2,6})$/;
-    if (!emailRegex.test(updates.email)) {
-        logger.error("[userController] :: editUser() : Invalid email format");
-        throw new AppError(400, i18n.__("ERROR_INVALID_EMAIL_FORMAT"));
-    }
-
-    const updatedUser = await User.findByIdAndUpdate(userId, updates, { new: true })
-
+    // Update the user in the database
+    const updatedUser = await User.findByIdAndUpdate(userId, updates, { new: true });
     if (!updatedUser) {
-        logger.error("[userController] :: editUser() : No users with the given id");
-        throw new AppError(404, i18n.__("USER_NOT_FOUND"))
+        logger.error("[userController] :: editUser() : User not found");
+        throw new AppError(404, i18n.__("ERROR_USER_NOT_FOUND"));
     }
 
-    res.status(200).json(updatedUser);
     logger.trace("[userController] :: editUser() : End");
-})
+    res.status(200).json({ data: updatedUser });
+});
+
 
 // @desc Delete user
 // @route DELETE /api/v1/users/:id
