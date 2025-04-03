@@ -18,5 +18,8 @@ router.delete('/:id/cv', userController.deleteUserCv);
 router.get('/get/recruiters', userController.getRecruiters);
 router.get('/get/applicants', userController.getApplicants);
 
+// New endpoint to update application status (accepted or rejected)
+router.patch('/:id/application-status', userController.updateApplicationStatus);
+
 module.exports = router;
 

@@ -105,6 +105,46 @@ const createUser = asyncHandler(async (req, res) => {
     logger.trace("[userController] :: createUser() : End");
 });
 
+
+// @desc    Update application status for a specific job for a user
+// @route   PATCH /api/v1/users/:id/application-status
+// @access  Private
+const updateApplicationStatus = asyncHandler(async (req, res) => {
+    logger.trace('[userController] :: updateApplicationStatus() : Start');
+
+    const userId = req.params.id;
+    const { jobId, status } = req.body;
+
+    if (!jobId || !status) {
+        logger.error('[userController] :: updateApplicationStatus() : Job ID and status are required');
+        throw new AppError(400, "Job ID and status are required");
+    }
+
+    const user = await User.findById(userId);
+    if (!user) {
+        logger.error('[userController] :: updateApplicationStatus() : User not found');
+        throw new AppError(404, "User not found");
+    }
+
+    // Remove the job ID from both shortlisted and rejected arrays if it exists.
+    user.shortlistedjobs = user.shortlistedjobs.filter(id => id.toString() !== jobId);
+    user.rejectedjobs = user.rejectedjobs.filter(id => id.toString() !== jobId);
+
+    if (status === 'accepted') {
+        user.shortlistedjobs.push(jobId);
+    } else if (status === 'rejected') {
+        user.rejectedjobs.push(jobId);
+    } else {
+        logger.error('[userController] :: updateApplicationStatus() : Invalid status');
+        throw new AppError(400, "Invalid status");
+    }
+
+    await user.save();
+    logger.trace('[userController] :: updateApplicationStatus() : End');
+    res.status(200).json({ message: "Application status updated", user });
+});
+
+
 // @desc    edit a user
 // @route   PUT /api/v1/users/:id
 // @access  Private
@@ -369,6 +409,7 @@ module.exports = {
     getUserOrganization,
     createUserCv,
     updateUserCv,
-    deleteUserCv
+    deleteUserCv,
+    updateApplicationStatus 
 
 }

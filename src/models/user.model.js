@@ -26,7 +26,8 @@ const userSchema = mongoose.Schema({
 
     appliedjobs: [{ type: mongoose.ObjectId, ref: "Jobs" }],
     
-    shortlistedjobs: [{ type: mongoose.ObjectId, ref: "Jobs" }]
+    shortlistedjobs: [{ type: mongoose.ObjectId, ref: "Jobs" }],
+    rejectedjobs: [{ type: mongoose.ObjectId, ref: "Jobs" }] 
     
 })
 

@@ -90,27 +90,46 @@ const deleteJob = asyncHandler(async (req, res) => {
     logger.trace('[organizationController] :: deleteJob() : End');
 });
 
-// @desc    Change job status
+
+// @desc    Change job status 
 // @route   PATCH /api/v1/organization/jobs/:id/status
 // @access  Private
 const changeJobStatus = asyncHandler(async (req, res) => {
     logger.trace('[organizationController] :: changeJobStatus() : Start');
 
+    // Ensure a status is provided in the request body
     if (!req.body || !req.body.status) {
         logger.error('[organizationController] :: changeJobStatus() : Status is missing');
         throw new AppError(400, 'Job status is required');
     }
 
-    const job = await Job.findByIdAndUpdate(req.params.id, { status: req.body.status }, { new: true });
+    // Only allow changing status to "Reviewed"
+    if (req.body.status !== 'Reviewed') {
+        logger.error('[organizationController] :: changeJobStatus() : Only status change to Reviewed is allowed');
+        throw new AppError(400, 'Only status change to Reviewed is allowed');
+    }
 
+    // Retrieve the job
+    const job = await Job.findById(req.params.id);
     if (!job) {
         logger.error(`[organizationController] :: changeJobStatus() : Job with ID ${req.params.id} not found`);
         throw new AppError(404, 'Job not found');
     }
 
+    // Ensure the current status is "Unopened" before updating
+    if (job.status !== 'Unopened') {
+        logger.error(`[organizationController] :: changeJobStatus() : Job with ID ${req.params.id} is already Reviewed`);
+        throw new AppError(400, 'Job is already Reviewed');
+    }
+
+    // Update the status and save the job
+    job.status = 'Reviewed';
+    await job.save();
+
     res.status(200).json(job);
     logger.trace('[organizationController] :: changeJobStatus() : End');
 });
+
 
 // @desc    Create an organization
 // @route   POST /api/v1/organization

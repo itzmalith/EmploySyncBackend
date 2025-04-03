@@ -29,8 +29,8 @@ const jobSchema = mongoose.Schema({
     status: {
         type: String,
         required: true,
-        enum: ['open', 'closed', 'pending'],
-        default: 'open'
+        enum: ['Unopened', 'Reviewed'],
+        default: 'Unopened'
     },
     organization: {
         type: mongoose.Schema.Types.ObjectId,
