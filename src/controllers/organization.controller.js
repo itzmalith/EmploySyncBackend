@@ -157,11 +157,7 @@ const updateOrganization = asyncHandler(async (req, res) => {
         throw new AppError(400, 'Invalid request data');
     }
 
-    // Destructure only the allowed fields from req.body
-    const { name, image, url } = req.body;
-    const updateData = { name, image, url };
-
-    const organization = await Organization.findByIdAndUpdate(req.params.id, updateData, { new: true });
+    const organization = await Organization.findByIdAndUpdate(req.params.id, req.body, { new: true });
 
     if (!organization) {
         logger.error(`[organizationController] :: updateOrganization() : Organization with ID ${req.params.id} not found`);
@@ -171,7 +167,6 @@ const updateOrganization = asyncHandler(async (req, res) => {
     res.status(200).json(organization);
     logger.trace('[organizationController] :: updateOrganization() : End');
 });
-
 
 // @desc    Get all organizations
 // @route   GET /api/v1/organizations
