@@ -78,3 +78,55 @@
 [2025-03-28T18:08:01.939] [ERROR] default - [userController] :: createUser() : Invalid username format
 [2025-03-28T18:08:27.198] [ERROR] default - [userController] :: createUser() : Invalid username format
 [2025-03-28T18:08:51.628] [ERROR] default - [userController] :: createUser() : Email already exists
+[2025-04-03T09:14:43.744] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T09:15:02.439] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T09:15:18.404] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T09:24:24.960] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T09:29:26.089] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T09:33:19.072] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T09:33:48.785] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T09:33:53.919] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T10:41:45.118] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T10:43:56.958] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T10:44:09.452] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T10:44:50.319] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T10:46:44.498] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T10:47:38.823] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T10:47:55.780] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T10:47:58.202] [ERROR] default - [userController] :: getUserCv() : Role not found for user
+[2025-04-03T10:48:07.945] [ERROR] default - [userController] :: editUser() : Invalid email format
+[2025-04-03T10:48:15.564] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T10:48:54.418] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T10:49:00.594] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T10:49:11.138] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T10:52:22.619] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T10:52:29.862] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T10:55:59.033] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T10:56:30.537] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T10:57:37.534] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T11:13:03.102] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T11:18:06.110] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T11:19:10.509] [ERROR] default - [userController] :: createUserCv() : CV already exists for user
+[2025-04-03T11:21:02.489] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T11:23:53.222] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T11:24:24.791] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T11:37:06.590] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T12:30:01.750] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T12:30:03.569] [ERROR] default - [userController] :: getUserCv() : Role not found for user
+[2025-04-03T12:30:21.969] [ERROR] default - [userController] :: editUser() : Invalid email format
+[2025-04-03T12:30:48.182] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T12:31:39.482] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T12:32:22.410] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T12:32:42.049] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T12:32:53.408] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T12:34:33.768] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T12:34:57.176] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T12:35:13.111] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T12:36:51.532] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T12:47:40.756] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T12:47:58.827] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T12:51:54.453] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T12:52:10.163] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T12:55:13.665] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T12:55:46.731] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-03T12:56:42.600] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
