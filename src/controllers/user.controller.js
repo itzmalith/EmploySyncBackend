@@ -144,6 +144,47 @@ const updateApplicationStatus = asyncHandler(async (req, res) => {
     res.status(200).json({ message: "Application status updated", user });
 });
 
+// @desc    patch a user’s basic info
+// @route   PATCH /api/v1/users/:id
+// @access  Private
+const patchUser = asyncHandler(async (req, res) => {
+    logger.trace("[userController] :: patchUser() : Start");
+
+    // you can either trust the :id param or still require it in the body:
+    const userId = req.params.id || req.body.userId;
+    if (!userId) {
+        logger.error("[userController] :: patchUser() : user id is a must");
+        throw new AppError(400, i18n.__("UNAUTHORIZED"));
+    }
+
+    // build only the fields you want to allow
+    const updates = {
+        ...(req.body.userName != null && req.body.userName !== "" && { userName: req.body.userName }),
+        ...(req.body.role != null && req.body.role !== "" && { role: req.body.role }),
+        ...(req.body.email != null && req.body.email !== "" && { email: req.body.email }),
+    };
+
+    if (Object.keys(updates).length === 0) {
+        logger.error("[userController] :: patchUser() : no valid fields to update");
+        throw new AppError(400, i18n.__("NO_UPDATES_SPECIFIED"));
+    }
+
+    const updatedUser = await User.findByIdAndUpdate(userId, updates, {
+        new: true,
+        runValidators: true
+    });
+
+    if (!updatedUser) {
+        logger.error(`[userController] :: patchUser() : user not found (${userId})`);
+        throw new AppError(404, i18n.__("USER_NOT_FOUND"));
+    }
+
+    logger.trace("[userController] :: patchUser() : Success");
+    res.status(200).json({
+        success: true,
+        data: updatedUser
+    });
+});
 
 // @desc    edit a user
 // @route   PUT /api/v1/users/:id
@@ -410,6 +451,7 @@ module.exports = {
     createUserCv,
     updateUserCv,
     deleteUserCv,
-    updateApplicationStatus 
+    updateApplicationStatus,
+    patchUser 
 
 }

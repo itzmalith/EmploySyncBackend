@@ -9,6 +9,7 @@ router.get('/',  userController.getUsers);
 router.put('/',  userController.editUser);
 router.delete('/:id', userController.deleteUser);
 router.get('/:id',  userController.getUserById);
+router.patch('/:id', userController.patchUser);
 
 router.get('/:id/cv', userController.getUserCv);
 router.get('/:id/organization', userController.getUserOrganization);

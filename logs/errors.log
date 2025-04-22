@@ -117,3 +117,61 @@
 [2025-04-03T23:04:41.249] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
 [2025-04-03T23:05:56.968] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
 [2025-04-03T23:07:50.291] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T11:53:43.011] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T11:55:35.466] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T11:57:51.949] [ERROR] default - [organizationController] :: changeJobStatus() : Job with ID 67f10486272d7b452fdbe2e5 is already Reviewed
+[2025-04-06T12:04:08.793] [ERROR] default - [organizationController] :: changeJobStatus() : Job with ID 67f10486272d7b452fdbe2e5 is already Reviewed
+[2025-04-06T12:05:53.209] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T12:10:19.171] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T12:10:29.898] [ERROR] default - [organizationController] :: changeJobStatus() : Job with ID 67f10486272d7b452fdbe2e5 is already Reviewed
+[2025-04-06T12:12:00.553] [ERROR] default - [organizationController] :: changeJobStatus() : Job with ID 67f10486272d7b452fdbe2e5 is already Reviewed
+[2025-04-06T12:12:07.454] [ERROR] default - [organizationController] :: changeJobStatus() : Job with ID 67f10486272d7b452fdbe2e5 is already Reviewed
+[2025-04-06T12:12:18.841] [ERROR] default - [organizationController] :: changeJobStatus() : Job with ID 67f10486272d7b452fdbe2e5 is already Reviewed
+[2025-04-06T12:12:23.090] [ERROR] default - [organizationController] :: changeJobStatus() : Job with ID 67f10486272d7b452fdbe2e5 is already Reviewed
+[2025-04-06T12:12:29.033] [ERROR] default - [organizationController] :: changeJobStatus() : Job with ID 67f10486272d7b452fdbe2e5 is already Reviewed
+[2025-04-06T12:12:38.678] [ERROR] default - [organizationController] :: changeJobStatus() : Job with ID 67f10486272d7b452fdbe2e5 is already Reviewed
+[2025-04-06T12:13:31.525] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T12:16:58.108] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T12:17:08.591] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T12:18:04.654] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T12:18:25.927] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T12:18:35.240] [ERROR] default - [organizationController] :: changeJobStatus() : Job with ID 67f109e9272d7b452fdbe34b is already Reviewed
+[2025-04-06T12:18:55.593] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T12:19:21.501] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T12:19:41.009] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T12:19:50.372] [ERROR] default - [organizationController] :: changeJobStatus() : Job with ID 67f10486272d7b452fdbe2e5 is already Reviewed
+[2025-04-06T12:20:01.226] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T17:21:40.286] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T17:23:46.260] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T17:24:00.699] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T17:27:07.542] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T17:28:50.438] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-06T17:31:41.235] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-08T08:51:56.178] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-08T08:52:06.480] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-08T08:53:50.800] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-08T08:53:53.782] [ERROR] default - [userController] :: getUserCv() : Role not found for user
+[2025-04-08T09:08:48.491] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-08T09:09:05.770] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-08T09:09:23.422] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-08T09:09:30.151] [ERROR] default - [organizationController] :: changeJobStatus() : Job with ID 67f104db272d7b452fdbe2fd is already Reviewed
+[2025-04-08T09:09:41.471] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-19T09:20:34.002] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-19T09:44:38.224] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-19T09:48:32.591] [ERROR] default - [userController] :: deleteUser() : No users with the given id
+[2025-04-21T20:45:43.107] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-21T20:48:46.326] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-22T19:02:48.625] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-22T19:04:15.590] [ERROR] default - [authController] :: authenticate() : Unauthorized user
+[2025-04-22T19:04:25.938] [ERROR] default - [authController] :: authenticate() : Unauthorized user
+[2025-04-22T19:05:41.198] [ERROR] default - [authController] :: authenticate() : Unauthorized user
+[2025-04-22T19:07:01.803] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-22T19:46:55.252] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-22T19:47:12.225] [ERROR] default - [s3Util] :: generateProfileImagePresignedURL() : Forbidden: null
+[2025-04-22T21:46:28.729] [ERROR] default - [userController] :: createUser() : Missing required field
+[2025-04-22T21:46:30.941] [ERROR] default - [userController] :: createUser() : Missing required field
+[2025-04-22T21:46:31.426] [ERROR] default - [userController] :: createUser() : Missing required field
+[2025-04-22T21:46:31.623] [ERROR] default - [userController] :: createUser() : Missing required field
+[2025-04-22T21:46:31.813] [ERROR] default - [userController] :: createUser() : Missing required field
+[2025-04-22T21:46:32.017] [ERROR] default - [userController] :: createUser() : Missing required field
+[2025-04-22T21:46:32.240] [ERROR] default - [userController] :: createUser() : Missing required field
